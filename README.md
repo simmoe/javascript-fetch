@@ -23,4 +23,4 @@ Now, this may look a little strange, so let´s break it up.
 
 5. And we are good to go - i.e we can make a small webpage where you can search for tv-shows. 
 
-<a href="https://github.simmoe.io/javascript-fetch">Watch a demo here</a>
+<a href="https://simmoe.github.io/javascript-fetch">Watch a demo here</a>
