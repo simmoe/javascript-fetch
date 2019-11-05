@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600&display=swap');
+
+html, body, h1, h2, h3, h4, h5, h6, p, a, img, main, section, article, div, span{
+    margin:0;
+    padding:0;
+    font-family: 'Open Sans', Arial;
+    box-sizing:border-box;
+    scroll-snap-type: y mandatory;
+}
+
+main{
+    display:grid;
+    padding:2rem;
+    grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+    gap:6rem;
+    padding:6rem;
+}
+article{
+    position:relative;
+    display:grid;
+    align-items:space-between;
+    transition: .3s ease;
+    transform-origin: center;
+    padding:1rem;
+    background-color: #eee;
+}
+article img{
+    width:100%;
+    border-radius:50%;
+    opacity:.6;
+    transition:.4s ease;
+}
+article:hover{
+    transform:scale(1.2);
+    z-index:2;
+}
+article:hover > .info ul, article:hover > img {
+    opacity:1;
+}
+
+.info{
+    padding:1rem;
+}
+
+.info h2{
+    text-align:center;
+}
+.info ul{
+    opacity:0;
+    transition:.8s ease;
+    margin:0;
+    padding:1rem;
+    list-style: none;
+    text-transform: uppercase;
+    font-size:.8rem;
+}
