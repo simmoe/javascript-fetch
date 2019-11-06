@@ -2,7 +2,7 @@
 
 // We fetch using await:
 async function apiGet(str) {
-    const b = await fetch(`http://api.tvmaze.com/search/shows?q=${str}`)
+    const b = await fetch(`https://api.tvmaze.com/search/shows?q=${str}`)
     const json = await b.json()
     console.log(json)
     json.length > 1 ? showSeries(json) : document.querySelector("main").innerHTML = "No results"
